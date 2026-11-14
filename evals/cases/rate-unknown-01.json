@@ -1,0 +1,69 @@
+{
+  "id": "rate-unknown-01",
+  "title": "NL, dienstcode die niet op de tariefkaart staat",
+  "kind": "tarief",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-2108",
+    "order_id": "ORD-NL-0031",
+    "customer_id": "CUST-VLIET",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "po_number": "PO-204518",
+    "lines": [
+      {
+        "description": "Inspectie leidingwerk, niveau 1",
+        "service_code": "INSP-L1",
+        "quantity": 24,
+        "unit": "hour",
+        "unit_price": 82.5,
+        "vat_rate": 21,
+        "amount": 1980.0
+      },
+      {
+        "description": "Ultrasoon onderzoek",
+        "service_code": "NDT-UT",
+        "quantity": 6,
+        "unit": "hour",
+        "unit_price": 110.0,
+        "vat_rate": 21,
+        "amount": 660.0
+      },
+      {
+        "description": "Inspectie leidingwerk, niveau 9",
+        "service_code": "INSP-L9",
+        "quantity": 4,
+        "unit": "hour",
+        "unit_price": 82.5,
+        "vat_rate": 21,
+        "amount": 330.0
+      }
+    ],
+    "subtotal": 2970.0,
+    "vat_total": 623.7,
+    "total": 3593.7
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.not_analysed",
+        "rates.unknown_service"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "rates.unknown_service"
+      ]
+    }
+  }
+}

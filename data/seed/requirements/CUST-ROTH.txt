@@ -1,0 +1,5 @@
+Rechnungsanforderungen der Rothmann Anlagenbau GmbH
+
+Jede Rechnung muss unsere Bestellnummer enthalten. Die Bestellnummer beginnt mit 45 und hat genau 10 Ziffern. Rechnungen ohne gültige Bestellnummer werden nicht bearbeitet.
+
+Rechnungen bitte als PDF an rechnungseingang@rothmann-anlagenbau.example senden. Rückfragen an Katrin Vogel, Telefon +49 30 5550 1234.

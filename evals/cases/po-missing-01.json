@@ -1,0 +1,59 @@
+{
+  "id": "po-missing-01",
+  "title": "DE, PO ontbreekt (eis uit vrije tekst van de klant)",
+  "kind": "PO ontbreekt",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-1104",
+    "order_id": "ORD-DE-0077",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "lines": [
+      {
+        "description": "Inspektion Druckbehaelter, Level 2",
+        "service_code": "INSP-L2",
+        "quantity": 16,
+        "unit": "hour",
+        "unit_price": 95.0,
+        "vat_rate": 19,
+        "amount": 1520.0
+      },
+      {
+        "description": "Werkstoffpruefung Labor",
+        "service_code": "LAB-MAT",
+        "quantity": 2,
+        "unit": "test",
+        "unit_price": 180.0,
+        "vat_rate": 19,
+        "amount": 360.0
+      }
+    ],
+    "subtotal": 1880.0,
+    "vat_total": 357.2,
+    "total": 2237.2
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.not_analysed",
+        "po.requirements_not_analysed"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.missing"
+      ]
+    }
+  }
+}

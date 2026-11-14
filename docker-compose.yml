@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"   # reachable from this machine only
+    environment:
+      API_KEY: ${API_KEY:-demo-key}   # a fresh clone works with demo-key
+    env_file:
+      - path: .env                    # optional: API_KEY and CLAUDE_CODE_OAUTH_TOKEN
+        required: false
+    volumes:
+      - factuurcontrole-data:/data    # the SQLite database (DATABASE_PATH=/data/app.db)
+
+volumes:
+  factuurcontrole-data:

@@ -1,0 +1,39 @@
+# Keywords per line category, in every language the offices invoice in. Matching is on
+# lower-cased substrings. A line that hits no category, or more than one, goes to the model
+# (masked) and always ends as controle_nodig.
+keywords:
+  labour:
+    - inspectie
+    - inspektion
+    - keuring
+    - audit
+    - arbeidsuren
+    - arbeitsstunden
+    - inspection
+  lab_test:
+    - laboratorium
+    - labor
+    - analyse
+    - pruefung
+    - prüfung
+  travel:
+    - reiskosten
+    - reisekosten
+    - reistijd
+    - kilometer
+    - fahrtkosten
+    - travel
+  accommodation:
+    - hotel
+    - overnachting
+    - uebernachtung
+    - übernachtung
+    - verblijf
+  materials:
+    - materiaal
+    - material
+    - verbruiksartikelen
+  subcontracting:
+    - onderaannemer
+    - subunternehmer
+    - inhuur derden

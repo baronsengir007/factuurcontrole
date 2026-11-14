@@ -1,0 +1,10 @@
+[
+  {"order_id": "ORD-DE-0077", "service_code": "INSP-L2", "description": "Inspektion Druckbehaelter, Level 2", "unit": "hour", "unit_price": "95.00", "category": "labour"},
+  {"order_id": "ORD-DE-0077", "service_code": "LAB-MAT", "description": "Werkstoffpruefung Labor", "unit": "test", "unit_price": "180.00", "category": "lab_test"},
+  {"order_id": "ORD-DE-0082", "service_code": "INSP-L2", "description": "Inspektion Druckbehaelter, Level 2", "unit": "hour", "unit_price": "98.00", "category": "labour"},
+  {"order_id": "ORD-DE-0082", "service_code": "ZERT-AUD", "description": "Zertifizierungsaudit", "unit": "hour", "unit_price": "125.00", "category": "labour"},
+  {"order_id": "ORD-NL-0031", "service_code": "INSP-L1", "description": "Inspectie leidingwerk, niveau 1", "unit": "hour", "unit_price": "82.50", "category": "labour"},
+  {"order_id": "ORD-NL-0031", "service_code": "NDT-UT", "description": "Ultrasoon onderzoek", "unit": "hour", "unit_price": "110.00", "category": "labour"},
+  {"order_id": "ORD-NL-0045", "service_code": "CERT-HIJS", "description": "Keuring hijsmiddelen", "unit": "hour", "unit_price": "88.00", "category": "labour"},
+  {"order_id": "ORD-NL-0045", "service_code": "LAB-OLIE", "description": "Olieanalyse laboratorium", "unit": "test", "unit_price": "145.00", "category": "lab_test"}
+]

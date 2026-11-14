@@ -1,0 +1,42 @@
+{
+  "id": "error-unknown-order",
+  "title": "onbekende opdracht",
+  "kind": "fout in de invoer",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-9001",
+    "order_id": "ORD-XX-9999",
+    "customer_id": "CUST-HAVEN",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "lines": [
+      {
+        "description": "Inspectie",
+        "quantity": 1,
+        "unit": "hour",
+        "unit_price": 80.0,
+        "vat_rate": 21,
+        "amount": 80.0
+      }
+    ],
+    "subtotal": 80.0,
+    "vat_total": 16.8,
+    "total": 96.8
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 404,
+      "error": "unknown_order"
+    },
+    "met-ai": {
+      "status": 404,
+      "error": "unknown_order"
+    }
+  }
+}

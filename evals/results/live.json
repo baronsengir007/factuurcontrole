@@ -1,0 +1,304 @@
+{
+  "ran_at": "2026-11-14 18:01",
+  "recorded_in_this_run": false,
+  "passed": 46,
+  "cases": {
+    "clean-01": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "clean-02": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "clean-03": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "clean-04": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "clean-05": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "clean-06": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "contract-approval-01": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "contract-hidden-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "lines.category_conflict"
+      ]
+    },
+    "contract-hidden-02": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "lines.category_conflict"
+      ]
+    },
+    "contract-travel-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.expense_not_billable"
+      ]
+    },
+    "contract-travel-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.expense_not_billable"
+      ]
+    },
+    "contract-unverified-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.expense_not_billable",
+        "contract.rules_unverified",
+        "po.requirements_unverified"
+      ]
+    },
+    "dup-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "duplicate.suspected"
+      ]
+    },
+    "dup-02": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "duplicate.suspected"
+      ]
+    },
+    "dup-not-01": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    },
+    "dup-resubmit-01": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": [
+        "duplicate.resubmitted"
+      ]
+    },
+    "error-customer-mismatch": {
+      "status": 422,
+      "error": "customer_mismatch"
+    },
+    "error-missing-field": {
+      "status": 422,
+      "error": "invalid_invoice"
+    },
+    "error-unknown-country": {
+      "status": 422,
+      "error": "unknown_country"
+    },
+    "error-unknown-order": {
+      "status": 404,
+      "error": "unknown_order"
+    },
+    "hours-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "hours.exceeds_records"
+      ]
+    },
+    "hours-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "hours.exceeds_records"
+      ]
+    },
+    "hours-below-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "hours.below_records"
+      ]
+    },
+    "hours-period-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "hours.exceeds_records"
+      ]
+    },
+    "injection-contract-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.expense_not_billable"
+      ]
+    },
+    "injection-line-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.expense_not_billable"
+      ]
+    },
+    "injection-line-02": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "lines.unclassified"
+      ]
+    },
+    "po-format-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.bad_format"
+      ]
+    },
+    "po-format-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.bad_format"
+      ]
+    },
+    "po-format-03": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.bad_format"
+      ]
+    },
+    "po-missing-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.missing"
+      ]
+    },
+    "po-missing-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.missing"
+      ]
+    },
+    "rate-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "rates.mismatch"
+      ]
+    },
+    "rate-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "rates.mismatch"
+      ]
+    },
+    "rate-nocode-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "rates.no_service_code"
+      ]
+    },
+    "rate-unit-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "rates.unit_mismatch"
+      ]
+    },
+    "rate-unknown-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "rates.unknown_service"
+      ]
+    },
+    "totals-line-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "totals.line_amount"
+      ]
+    },
+    "totals-line-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "totals.line_amount"
+      ]
+    },
+    "totals-subtotal-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "totals.subtotal"
+      ]
+    },
+    "totals-total-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "totals.total"
+      ]
+    },
+    "totals-vat-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "totals.vat_total"
+      ]
+    },
+    "unclear-01": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.expense_not_billable",
+        "lines.ai_classified"
+      ]
+    },
+    "unclear-02": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "lines.ai_classified"
+      ]
+    },
+    "vat-01": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "vat.wrong_rate"
+      ]
+    },
+    "vat-02": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "vat.wrong_rate"
+      ]
+    }
+  }
+}

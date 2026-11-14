@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CUST-ROTH",
+    "name": "Rothmann Anlagenbau GmbH",
+    "country": "DE",
+    "contact_name": "Katrin Vogel",
+    "requirements_file": "requirements/CUST-ROTH.txt"
+  },
+  {
+    "id": "CUST-VLIET",
+    "name": "Van der Vliet Procestechniek B.V.",
+    "country": "NL",
+    "contact_name": "Sanne de Groot",
+    "po": {"required": true, "format": "^PO-\\d{6}$"}
+  },
+  {
+    "id": "CUST-HAVEN",
+    "name": "Havenbedrijf Noordkade B.V.",
+    "country": "NL",
+    "contact_name": "Pieter Janssens"
+  }
+]

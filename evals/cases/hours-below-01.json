@@ -1,0 +1,60 @@
+{
+  "id": "hours-below-01",
+  "title": "NL, 20 uur gefactureerd, 24 geboekt (te weinig)",
+  "kind": "uren",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-2110",
+    "order_id": "ORD-NL-0031",
+    "customer_id": "CUST-VLIET",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "po_number": "PO-204518",
+    "lines": [
+      {
+        "description": "Inspectie leidingwerk, niveau 1",
+        "service_code": "INSP-L1",
+        "quantity": 20,
+        "unit": "hour",
+        "unit_price": 82.5,
+        "vat_rate": 21,
+        "amount": 1650.0
+      },
+      {
+        "description": "Ultrasoon onderzoek",
+        "service_code": "NDT-UT",
+        "quantity": 6,
+        "unit": "hour",
+        "unit_price": 110.0,
+        "vat_rate": 21,
+        "amount": 660.0
+      }
+    ],
+    "subtotal": 2310.0,
+    "vat_total": 485.1,
+    "total": 2795.1
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.not_analysed",
+        "hours.below_records"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "hours.below_records"
+      ]
+    }
+  }
+}

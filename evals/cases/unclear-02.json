@@ -1,0 +1,58 @@
+{
+  "id": "unclear-02",
+  "title": "NL, onduidelijke regel 'Nacht in pension, inspecteur'",
+  "kind": "onduidelijke regel",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-2113",
+    "order_id": "ORD-NL-0045",
+    "customer_id": "CUST-HAVEN",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "lines": [
+      {
+        "description": "Keuring hijsmiddelen",
+        "service_code": "CERT-HIJS",
+        "quantity": 12,
+        "unit": "hour",
+        "unit_price": 88.0,
+        "vat_rate": 21,
+        "amount": 1056.0
+      },
+      {
+        "description": "Nacht in pension, inspecteur",
+        "quantity": 1,
+        "unit": "piece",
+        "unit_price": 85.0,
+        "vat_rate": 21,
+        "amount": 85.0
+      }
+    ],
+    "subtotal": 1141.0,
+    "vat_total": 239.61,
+    "total": 1380.61
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.not_analysed",
+        "lines.unclassified"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "lines.ai_classified"
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "hours-01",
+  "title": "DE, 18 uur gefactureerd, 16 geboekt",
+  "kind": "uren",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-1109",
+    "order_id": "ORD-DE-0077",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "po_number": "4500012345",
+    "lines": [
+      {
+        "description": "Inspektion Druckbehaelter, Level 2",
+        "service_code": "INSP-L2",
+        "quantity": 18,
+        "unit": "hour",
+        "unit_price": 95.0,
+        "vat_rate": 19,
+        "amount": 1710.0
+      },
+      {
+        "description": "Werkstoffpruefung Labor",
+        "service_code": "LAB-MAT",
+        "quantity": 2,
+        "unit": "test",
+        "unit_price": 180.0,
+        "vat_rate": 19,
+        "amount": 360.0
+      }
+    ],
+    "subtotal": 2070.0,
+    "vat_total": 393.3,
+    "total": 2463.3
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.not_analysed",
+        "hours.exceeds_records",
+        "po.requirements_not_analysed"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "hours.exceeds_records"
+      ]
+    }
+  }
+}

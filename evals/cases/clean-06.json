@@ -1,0 +1,58 @@
+{
+  "id": "clean-06",
+  "title": "DE, dezelfde uren over twee regels",
+  "kind": "schoon",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-1050",
+    "order_id": "ORD-DE-0077",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "po_number": "4500012345",
+    "lines": [
+      {
+        "description": "Inspektion Druckbehaelter, Level 2, Tag 1",
+        "service_code": "INSP-L2",
+        "quantity": 10,
+        "unit": "hour",
+        "unit_price": 95.0,
+        "vat_rate": 19,
+        "amount": 950.0
+      },
+      {
+        "description": "Inspektion Druckbehaelter, Level 2, Tag 2",
+        "service_code": "INSP-L2",
+        "quantity": 6,
+        "unit": "hour",
+        "unit_price": 95.0,
+        "vat_rate": 19,
+        "amount": 570.0
+      }
+    ],
+    "subtotal": 1520.0,
+    "vat_total": 288.8,
+    "total": 1808.8
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "controle_nodig",
+      "codes": [
+        "contract.not_analysed",
+        "po.requirements_not_analysed"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "goedgekeurd",
+      "codes": []
+    }
+  }
+}

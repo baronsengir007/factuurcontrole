@@ -1,0 +1,9 @@
+# Near-duplicate invoices. score = sum of the weights of the features that match.
+weights:
+  lines: 0.4            # times the share of equal lines (Jaccard on code-or-category, quantity, price)
+  total: 0.3            # the totals differ by at most total_tolerance_pct
+  order: 0.2            # same order
+  period: 0.1           # the periods overlap
+threshold: 0.8          # score at or above this gives duplicate.suspected
+window_days: 120        # only earlier invoices dated within this many days are compared
+total_tolerance_pct: 1

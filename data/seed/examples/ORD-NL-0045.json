@@ -1,0 +1,44 @@
+{
+  "invoice_number": "INV-2026-2018",
+  "order_id": "ORD-NL-0045",
+  "customer_id": "CUST-HAVEN",
+  "country": "NL",
+  "currency": "EUR",
+  "invoice_date": "2026-11-03",
+  "period": {
+    "from": "2026-10-01",
+    "to": "2026-10-31"
+  },
+  "lines": [
+    {
+      "description": "Keuring hijsmiddelen",
+      "service_code": "CERT-HIJS",
+      "quantity": 12,
+      "unit": "hour",
+      "unit_price": 88.0,
+      "vat_rate": 21,
+      "amount": 1056.0
+    },
+    {
+      "description": "Olieanalyse laboratorium",
+      "service_code": "LAB-OLIE",
+      "quantity": 3,
+      "unit": "test",
+      "unit_price": 145.0,
+      "vat_rate": 21,
+      "amount": 435.0
+    },
+    {
+      "description": "Reiskosten 2 dagen",
+      "category": "travel",
+      "quantity": 1,
+      "unit": "piece",
+      "unit_price": 96.4,
+      "vat_rate": 21,
+      "amount": 96.4
+    }
+  ],
+  "subtotal": 1587.4,
+  "vat_total": 333.35,
+  "total": 1920.75
+}

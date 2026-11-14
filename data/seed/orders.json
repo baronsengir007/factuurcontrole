@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ORD-DE-0077",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "description": "Wiederkehrende Pruefung Druckbehaelter",
+    "contract_file": "contracts/ORD-DE-0077.txt"
+  },
+  {
+    "id": "ORD-DE-0082",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "description": "Zertifizierungsaudit mit begleitender Inspektion",
+    "contract_file": "contracts/ORD-DE-0082.txt"
+  },
+  {
+    "id": "ORD-NL-0031",
+    "customer_id": "CUST-VLIET",
+    "country": "NL",
+    "description": "Inspectie leidingwerk en ultrasoon onderzoek",
+    "contract_file": "contracts/ORD-NL-0031.txt"
+  },
+  {
+    "id": "ORD-NL-0045",
+    "customer_id": "CUST-HAVEN",
+    "country": "NL",
+    "description": "Periodieke keuring hijsmiddelen",
+    "contract_file": "contracts/ORD-NL-0045.txt"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "error-missing-field",
+  "title": "verplichte velden ontbreken",
+  "kind": "fout in de invoer",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-9002",
+    "order_id": "ORD-NL-0045",
+    "customer_id": "CUST-HAVEN",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "lines": [
+      {
+        "description": "Keuring hijsmiddelen",
+        "service_code": "CERT-HIJS",
+        "unit": "hour",
+        "unit_price": 88.0,
+        "vat_rate": 21,
+        "amount": 1056.0
+      }
+    ],
+    "subtotal": 1056.0,
+    "vat_total": 221.76
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 422,
+      "error": "invalid_invoice"
+    },
+    "met-ai": {
+      "status": 422,
+      "error": "invalid_invoice"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {"order_id": "ORD-DE-0077", "service_code": "INSP-L2", "date": "2026-10-06", "hours": "8", "inspector": "Jonas Brandt"},
+  {"order_id": "ORD-DE-0077", "service_code": "INSP-L2", "date": "2026-10-07", "hours": "8", "inspector": "Jonas Brandt"},
+  {"order_id": "ORD-DE-0082", "service_code": "INSP-L2", "date": "2026-10-27", "hours": "8", "inspector": "Miriam Kessler"},
+  {"order_id": "ORD-DE-0082", "service_code": "ZERT-AUD", "date": "2026-10-28", "hours": "6", "inspector": "Miriam Kessler"},
+  {"order_id": "ORD-DE-0082", "service_code": "ZERT-AUD", "date": "2026-10-29", "hours": "4", "inspector": "Miriam Kessler"},
+  {"order_id": "ORD-NL-0031", "service_code": "INSP-L1", "date": "2026-10-12", "hours": "8", "inspector": "Lotte Verbeek"},
+  {"order_id": "ORD-NL-0031", "service_code": "INSP-L1", "date": "2026-10-13", "hours": "8", "inspector": "Lotte Verbeek"},
+  {"order_id": "ORD-NL-0031", "service_code": "INSP-L1", "date": "2026-10-14", "hours": "8", "inspector": "Lotte Verbeek"},
+  {"order_id": "ORD-NL-0031", "service_code": "NDT-UT", "date": "2026-10-15", "hours": "6", "inspector": "Daan Smits"},
+  {"order_id": "ORD-NL-0045", "service_code": "CERT-HIJS", "date": "2026-10-20", "hours": "8", "inspector": "Daan Smits"},
+  {"order_id": "ORD-NL-0045", "service_code": "CERT-HIJS", "date": "2026-10-21", "hours": "4", "inspector": "Daan Smits"}
+]

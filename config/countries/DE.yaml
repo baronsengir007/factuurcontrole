@@ -1,0 +1,7 @@
+# Duitsland. A new country is a new file here; no code changes.
+country: DE
+name_nl: Duitsland
+currency: EUR
+vat:
+  standard: 19          # TIC services fall under the standard rate
+  by_category: {}       # category: rate, only where a category differs from the standard rate

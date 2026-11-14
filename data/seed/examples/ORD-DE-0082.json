@@ -1,0 +1,36 @@
+{
+  "invoice_number": "INV-2026-1043",
+  "order_id": "ORD-DE-0082",
+  "customer_id": "CUST-ROTH",
+  "country": "DE",
+  "currency": "EUR",
+  "invoice_date": "2026-11-03",
+  "period": {
+    "from": "2026-10-01",
+    "to": "2026-10-31"
+  },
+  "po_number": "4500067890",
+  "lines": [
+    {
+      "description": "Inspektion Druckbehaelter, Level 2",
+      "service_code": "INSP-L2",
+      "quantity": 8,
+      "unit": "hour",
+      "unit_price": 98.0,
+      "vat_rate": 19,
+      "amount": 784.0
+    },
+    {
+      "description": "Zertifizierungsaudit",
+      "service_code": "ZERT-AUD",
+      "quantity": 10,
+      "unit": "hour",
+      "unit_price": 125.0,
+      "vat_rate": 19,
+      "amount": 1250.0
+    }
+  ],
+  "subtotal": 2034.0,
+  "vat_total": 386.46,
+  "total": 2420.46
+}

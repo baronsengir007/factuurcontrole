@@ -1,0 +1,61 @@
+{
+  "id": "rate-01",
+  "title": "DE, uurtarief 99 in plaats van 95",
+  "kind": "tarief",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-1107",
+    "order_id": "ORD-DE-0077",
+    "customer_id": "CUST-ROTH",
+    "country": "DE",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "po_number": "4500012345",
+    "lines": [
+      {
+        "description": "Inspektion Druckbehaelter, Level 2",
+        "service_code": "INSP-L2",
+        "quantity": 16,
+        "unit": "hour",
+        "unit_price": 99.0,
+        "vat_rate": 19,
+        "amount": 1584.0
+      },
+      {
+        "description": "Werkstoffpruefung Labor",
+        "service_code": "LAB-MAT",
+        "quantity": 2,
+        "unit": "test",
+        "unit_price": 180.0,
+        "vat_rate": 19,
+        "amount": 360.0
+      }
+    ],
+    "subtotal": 1944.0,
+    "vat_total": 369.36,
+    "total": 2313.36
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.not_analysed",
+        "po.requirements_not_analysed",
+        "rates.mismatch"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "rates.mismatch"
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "po-missing-02",
+  "title": "NL, PO ontbreekt (eis uit klantconfiguratie)",
+  "kind": "PO ontbreekt",
+  "verified": true,
+  "setup": [],
+  "invoice": {
+    "invoice_number": "INV-2026-2105",
+    "order_id": "ORD-NL-0031",
+    "customer_id": "CUST-VLIET",
+    "country": "NL",
+    "currency": "EUR",
+    "invoice_date": "2026-11-03",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-10-31"
+    },
+    "lines": [
+      {
+        "description": "Inspectie leidingwerk, niveau 1",
+        "service_code": "INSP-L1",
+        "quantity": 24,
+        "unit": "hour",
+        "unit_price": 82.5,
+        "vat_rate": 21,
+        "amount": 1980.0
+      },
+      {
+        "description": "Ultrasoon onderzoek",
+        "service_code": "NDT-UT",
+        "quantity": 6,
+        "unit": "hour",
+        "unit_price": 110.0,
+        "vat_rate": 21,
+        "amount": 660.0
+      }
+    ],
+    "subtotal": 2640.0,
+    "vat_total": 554.4,
+    "total": 3194.4
+  },
+  "expect": {
+    "zonder-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "contract.not_analysed",
+        "po.missing"
+      ]
+    },
+    "met-ai": {
+      "status": 200,
+      "verdict": "afgewezen",
+      "codes": [
+        "po.missing"
+      ]
+    }
+  }
+}

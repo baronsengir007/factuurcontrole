@@ -1,0 +1,23 @@
+# The verdict. Evaluated top to bottom; the first row that matches a finding wins.
+#
+# Row 0 is fixed in code (app/verdict.py) and comes before this table:
+#   a. only a finding with certainty code or verified_rule can give afgewezen;
+#   b. a finding with certainty ai or not_run never gives goedgekeurd.
+# A table that breaks (a) is refused when the service starts.
+#
+# A customer can get a stricter table: put a copy in config/ and name the file in the
+# customer's decision_table field. Example of a stricter row (under-billing also rejects):
+#   - name: under_billing_rejects
+#     when: {severity: warning, certainty: code, codes: [hours.below_records]}
+#     verdict: afgewezen
+rows:
+  - name: error_from_code_or_confirmed_rule
+    when: {severity: error, certainty: [code, verified_rule]}
+    verdict: afgewezen
+  - name: error_resting_on_ai
+    when: {severity: error, certainty: [ai, not_run]}
+    verdict: controle_nodig
+  - name: any_warning
+    when: {severity: warning}
+    verdict: controle_nodig
+default: goedgekeurd
